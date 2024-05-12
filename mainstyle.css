@@ -39,6 +39,7 @@ header
     font-size: 40px;
     color: #359381;
     pointer-events: none;
+    cursor: pointer;
 }
 .navigation a
 {

@@ -103,7 +103,8 @@
 {
     font-size: 40px;
     color: #359381;
-    pointer-events: none;
+    pointer-events:auto;
+    cursor: pointer;
 }
 .navigation a
 {
@@ -185,7 +186,18 @@
     width: 100%;
     height: 37%;
 }
-
+#mid1 p, #mid2 p
+{
+    display: none;
+}
+#mid1 h2:hover ~ .mid-article
+{
+    display: block;
+}
+#mid2 h2:hover ~ .mid-article
+{
+    display: block;
+}
 .right1 {
     grid-row: 4/5;
     grid-column: 5/6;
