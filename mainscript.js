@@ -1,4 +1,4 @@
-let text=document.getElementById('text');
+let text=document.getElementById('logo');
 let sun=document.getElementById('sun');
 let cloud1=document.getElementById('cloud1');
 let cloud2=document.getElementById('cloud2');
@@ -9,7 +9,7 @@ let hill3=document.getElementById('hill3');
 window.addEventListener('scroll', () =>
 {
     let value = window.scrollY;
-    text.style.marginTop = value * 2 + 'px';
+    logo.style.marginTop = value * 1 + 'px';
     sun.style.top = value * -1.5 + 'px';
     hill2.style.left = value * 1.5 + 'px';
     hill1.style.left = value * -1.5 + 'px'
