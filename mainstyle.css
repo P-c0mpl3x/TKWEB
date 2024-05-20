@@ -12,6 +12,7 @@ body
 {
     background: #C2DFED;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 header
 {
@@ -39,6 +40,7 @@ header
     font-size: 40px;
     color: #359381;
     pointer-events: none;
+    cursor: pointer;
 }
 .navigation a
 {
