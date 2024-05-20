@@ -14,6 +14,7 @@ window.addEventListener('scroll', () =>
     hill2.style.left = value * 1.5 + 'px';
     hill1.style.left = value * -1.5 + 'px'
     tree.style.top = value * 0.5 + 'px';
-    cloud1.style.left = value * -2 + 'px';
-    cloud2.style.left = value * 2 + 'px';
+    cloud1.style.left = value * -1.1 + 'px';
+    cloud2.style.left = value * 1.1 + 'px';
 });
+
