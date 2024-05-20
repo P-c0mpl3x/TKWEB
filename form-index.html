@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Log in | Register </title>
+</head>
+
+<body>
+    <div class="form-containet">
+        <div class="col col-1">
+            <div class="btn-box">
+                <button class="btn btn-1" id="login" style="background-color: rgb(33, 38, 77);">Sign In</button>
+                <button class="btn btn-2" id="register" style="background-color: rgba(255, 255, 255, 0.2);">Sign Up</button>
+            </div>
+
+            <!-- =================== login-form =================== -->
+
+            <div class="login-form" style="left: 50%; opacity: 1;">
+                <div class="form-title">
+                    <span>Sign In</span>
+                </div>
+                <div class="form-inputs">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="User Name" required="" id="user1">
+                        <i class="bx bx-user icon"></i>
+                        <div id="check-username1" class="form-text text-danger" style="display: none; color: red;">Username không được để trống*</div>
+
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Password" required="" id="password1">
+                        <i class="bx bx-lock-alt icon"></i>
+                        <div id="check-password1" class="form-text text-danger" style="display: none; color: red;">Password không được để trống*</div>
+                    </div>
+                    <div class="input-box" id="checksignin">
+                        <button class="input-submit">
+                            <span>Sign In</span>
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="social-login">
+                    <a href="https://www.youtube.com/watch?v=-j1mHrmdH0E&t=10414s" target="_blank"><i class="bx bxl-google"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100041514528417&locale=vi_VN" target="_blank"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://sinhvien.huit.edu.vn/dashboard.html"> <i class="bx bxl-twitter" target="_blank"></i></a>
+                    <a href="https://github.com/P-c0mpl3x/TKWEB"><i class="bx bxl-github" target="_blank"></i></a>
+                </div>
+                <div id="sign">
+                    <p>Bạn Chưa có Tài Khoản? <a href="#" target="" id="sign">Đăng kí ngay</a></p>
+                </div>
+                <div id="signdone">
+                    <p>Bạn Đã Đăng Kí Thành Công</p>
+                </div>
+            </div>
+
+            <!-- =================== register-form =================== -->
+
+            <div class="register-form" style="left: -50%; opacity: 0;">
+                <div class="form-title">
+                    <span>Sign Up</span>
+                </div>
+                <div class="form-inputs">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="User Name" required="" id="user">
+                        <i class="bx bx-user icon"></i>
+                        <div id="check-username" class="form-text text-danger" style="display: none; color: red;">Username không được để trống*</div>
+
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="input-field" placeholder="Email" required="" id="Email">
+                        <i class="bx bx-envelope icon"></i>
+                        <div id="check-email" class="form-text text-danger" style="display: none; color: red;">Nhập sai định dạng email*</div>
+
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Password" required="" id="password">
+                        <i class="bx bx-lock-alt icon"></i>
+                        <div id="check-password" class="form-text text-danger" style="display: none; color: red;">Password không được để trống*</div>
+                    </div>
+                    <div class="input-box" id="signup">
+                        <button class="input-submit">
+                            <span>Sign Up</span>
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="social-login">
+                    <a href="https://www.youtube.com/watch?v=-j1mHrmdH0E&t=10414s" target="_blank"><i class="bx bxl-google"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100041514528417&locale=vi_VN" target="_blank"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://sinhvien.huit.edu.vn/dashboard.html"> <i class="bx bxl-twitter" target="_blank"></i></a>
+                    <a href="https://github.com/P-c0mpl3x/TKWEB"><i class="bx bxl-github" target="_blank"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="form-script.js"></script>
+
+</html>
