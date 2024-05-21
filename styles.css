@@ -452,7 +452,7 @@ figcaption a:hover {
     color: rgb(238, 32, 32);
   }
   .footer .footer-txt{
-    color: rgb(114, 154, 170);
+    color: rgb(118, 62, 190);
     font-size: 50px;
     font-weight: 400;
   }
@@ -487,13 +487,13 @@ figcaption a:hover {
     left: 0;
     height: 110%;
     width: 100%;
-    background: #343F4F;
+    background: rgb(197, 212, 212);
     border-left: 2px solid #FC6D6D;
     animation: typing 3s steps(10) infinite;
   }
   @keyframes typing {
     40%, 60%{
-      left: calc(100% + 30px);
+      left: calc(100% + 7px);
     }
     100%{
       left: 0;
