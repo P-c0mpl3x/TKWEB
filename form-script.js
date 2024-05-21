@@ -7,7 +7,6 @@ const signup = document.querySelector('#signup')
 const signdone = document.querySelector("#signdone");
 const checksignin = document.querySelector("#checksignin");
 
-
 function sign_in() {
     loginBtn.style.backgroundColor = "#21264D";
     registerBtn.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
@@ -104,6 +103,27 @@ function validatePasswordInput() {
     }
 }
 
+const signupButton = document.getElementById('signup');
+signupButton.addEventListener('click', function() {
+    sum = 0;
+    validateUsernameInput();
+    validateEmailInput();
+    validatePasswordInput();
+    if (sum == 3) {
+        sign_in();
+        const sign = document.getElementById('sign');
+        const signdone = document.getElementById('signdone');
+        sign.classList.add('hide');
+        signdone.style.display = 'block';
+        document.getElementById('user').value = '';
+        document.getElementById('Email').value = '';
+        document.getElementById('password').value = '';
+        document.getElementById('user1').value = '';
+        document.getElementById('password1').value = '';
+    }
+});
+
+
 function validateUsernameInputSignIn() {
     const usernameInput = document.getElementById('user1');
     const checkUsernameMessage = document.getElementById('check-username1');
@@ -114,7 +134,6 @@ function validateUsernameInputSignIn() {
     } else {
         checkUsernameMessage.style.display = 'none';
         usernameInput.classList.remove('invalid');
-        sum++;
     }
 }
 
@@ -128,23 +147,11 @@ function validatePasswordInputSignIn() {
     } else {
         checkPasswordMessage.style.display = 'none';
         passwordInput.classList.remove('invalid');
-        sum++;
     }
 }
 
 
-signup.addEventListener('click', function() {
-    validateUsernameInput();
-    validateEmailInput();
-    validatePasswordInput();
 
-    if (sum == 3) {
-        sign_in();
-        sign.classList.add('hide');
-        signdone.style.display = 'block';
-    }
-
-});
 
 checksignin.addEventListener('click', function() {
     validateUsernameInputSignIn();
