@@ -6,6 +6,8 @@ const sign = document.querySelector("#sign");
 const signup = document.querySelector('#signup')
 const signdone = document.querySelector("#signdone");
 const checksignin = document.querySelector("#checksignin");
+var close = document.querySelector('.close');
+var gallery = document.querySelector('.gallery');
 
 function sign_in() {
     loginBtn.style.backgroundColor = "#21264D";
@@ -120,9 +122,11 @@ signupButton.addEventListener('click', function() {
         document.getElementById('password').value = '';
         document.getElementById('user1').value = '';
         document.getElementById('password1').value = '';
+
     }
 });
 
+let sumsignin = 0;
 
 function validateUsernameInputSignIn() {
     const usernameInput = document.getElementById('user1');
@@ -134,6 +138,7 @@ function validateUsernameInputSignIn() {
     } else {
         checkUsernameMessage.style.display = 'none';
         usernameInput.classList.remove('invalid');
+        sumsignin++;
     }
 }
 
@@ -147,15 +152,28 @@ function validatePasswordInputSignIn() {
     } else {
         checkPasswordMessage.style.display = 'none';
         passwordInput.classList.remove('invalid');
+        sumsignin++;
     }
 }
 
 
 
 
+function showGallery() {
+    gallery.classList.add('show');
+}
+
+close.addEventListener('click', function() {
+    gallery.classList.remove('show')
+})
+
 checksignin.addEventListener('click', function() {
+    sumsignin = 0;
     validateUsernameInputSignIn();
     validatePasswordInputSignIn();
     sign.classList.remove('hide')
     signdone.style.opacity = "0";
+    if (sumsignin == 2) {
+        showGallery();
+    }
 })
