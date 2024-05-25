@@ -35,14 +35,47 @@ function sign_up() {
     document.querySelector(".col-1").style.borderRadius = "0 20% 30% 0";
 }
 
+function rmvsignup() {
+    const passwordInput = document.getElementById('password');
+    const checkPasswordMessage = document.getElementById('check-password');
+    const usernameInput = document.getElementById('user');
+    const checkUsernameMessage = document.getElementById('check-username');
+    const emailInput = document.getElementById('Email');
+    const checkEmailMessage = document.getElementById('check-email');
+    checkEmailMessage.style.display = 'none';
+    emailInput.classList.remove('invalid');
+    checkUsernameMessage.style.display = 'none';
+    usernameInput.classList.remove('invalid');
+    checkPasswordMessage.style.display = 'none';
+    passwordInput.classList.remove('invalid');
+    document.getElementById('user').value = '';
+    document.getElementById('Email').value = '';
+    document.getElementById('password').value = '';
+}
+
+function rmvsignin() {
+    const passwordInput = document.getElementById('password1');
+    const checkPasswordMessage = document.getElementById('check-password1');
+    const usernameInput = document.getElementById('user1');
+    const checkUsernameMessage = document.getElementById('check-username1');
+    checkUsernameMessage.style.display = 'none';
+    usernameInput.classList.remove('invalid');
+    checkPasswordMessage.style.display = 'none';
+    passwordInput.classList.remove('invalid');
+    document.getElementById('user1').value = '';
+    document.getElementById('password1').value = '';
+}
+
 // Ấn vào btn sign-in
 loginBtn.addEventListener('click', () => {
     sign_in();
+    rmvsignup();
 })
 
 // Ấn vào btn Sign Up
 registerBtn.addEventListener('click', function() {
     sign_up();
+    rmvsignin();
 
 })
 
@@ -58,6 +91,10 @@ sign.addEventListener('click', function() {
     registerForm.style.opacity = "1";
 
     document.querySelector(".col-1").style.borderRadius = "0 20% 30% 0";
+
+
+
+
 })
 
 let sum = 0;
@@ -105,6 +142,7 @@ function validatePasswordInput() {
     }
 }
 
+
 const signupButton = document.getElementById('signup');
 signupButton.addEventListener('click', function() {
     sum = 0;
@@ -122,6 +160,8 @@ signupButton.addEventListener('click', function() {
         document.getElementById('password').value = '';
         document.getElementById('user1').value = '';
         document.getElementById('password1').value = '';
+        rmvsignin();
+
 
     }
 });
