@@ -134,20 +134,6 @@
     color: whitesmoke;
 }
 
-#english {
-    width: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, 30%);
-}
-
-#vietnamese {
-    width: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, 35%);
-}
-
 .navigation img {
     border-radius: 20px;
 }
@@ -171,7 +157,7 @@
 }
 
 .left-news {
-    grid-row: 4/7;
+    grid-row: 4/8;
     grid-column: 2/4;
     position: relative;
 }
@@ -195,7 +181,7 @@
     transition: 1s;
     opacity: 0;
 }
-
+.left-news 
 #desc {
     font-size: 13px;
     font-style: italic;
@@ -558,3 +544,18 @@ figcaption a:hover {
         left: 0;
     }
 }
+.card-container{
+    margin:auto;
+    padding: 30px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 80%;
+  }
+  .card-container h2
+  {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 17px;
+    background-color: #3faae9;
+    width: fit-content;
+  }
