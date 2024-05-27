@@ -1,5 +1,5 @@
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -180,8 +180,8 @@
     transition: 1s;
     opacity: 0;
 }
-.left-news 
-#desc {
+
+.left-news #desc {
     font-size: 13px;
     font-style: italic;
 }
@@ -543,18 +543,39 @@ figcaption a:hover {
         left: 0;
     }
 }
-.card-container{
-    margin:auto;
+
+.card-container {
+    margin: auto;
     padding: 30px;
     border: 1px solid grey;
     border-radius: 10px;
     width: 80%;
-  }
-  .card-container h2
-  {
+}
+
+.card-container h2 {
     padding: 10px;
     border: 1px solid black;
     border-radius: 17px;
     background-color: #3faae9;
     width: fit-content;
-  }
+}
+
+.navigation .search-box:hover,
+.navigation .search-box:active {
+    background-color: rgb(197, 212, 212);
+}
+
+.search-box__input {
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.fa-search {
+    width: 40px;
+    height: fit-content;
+}
+
+.search-box__btn {
+    border-radius: 30px;
+    height: 25px;
+}

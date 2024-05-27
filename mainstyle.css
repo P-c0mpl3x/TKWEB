@@ -1,24 +1,23 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     list-style: none;
-
 }
-html{
+
+html {
     scroll-behavior: smooth;
-  }
-body
-{
+}
+
+body {
     background: #C2DFED;
     min-height: 100vh;
     overflow-x: hidden;
 }
-header
-{
+
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -38,68 +37,69 @@ header
     transform: translate(-50%, -50%);
 }
 
-.logo
-{
+.logo {
     font-size: 40px;
     color: #359381;
     pointer-events: none;
     cursor: pointer;
 }
-.navigation a
-{
+
+.navigation a {
     color: #359381;
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px;
     font-weight: 600;
-    font-size: 17px;     
+    font-size: 17px;
 }
-.navigation a:hover, .navigation a.active
-{
+
+.navigation a:hover,
+.navigation a.active {
     background-color: #359381;
     color: whitesmoke;
 }
-.parallax
-{
+
+.parallax {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 115vh;
 }
-#text
-{
+
+#text {
     position: absolute;
     font-size: 5em;
     color: #359381;
     text-shadow: 2px 2px 4px black;
 }
-.parallax img
-{
+
+.parallax img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-.sec
-{
+
+.sec {
     position: relative;
     background: #359381;
     padding: 120px;
 }
-.sec h2
-{
+
+.sec h2 {
     font-size: 3em;
     color: whitesmoke;
     margin-bottom: 10px;
 }
-.sec p
-{
+
+.sec p {
     font-size: 1.5em;
     color: whitesmoke;
     font-weight: 300;
 }
-.topup{
+
+.topup {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -112,5 +112,24 @@ header
     text-decoration: none;
     font-size: 27px;
     border-radius: 17px;
-  }
-  
+}
+
+.navigation .search-box:hover,
+.navigation .search-box:active {
+    background-color: #C2DFED;
+}
+
+.search-box__input {
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.fa-search {
+    width: 40px;
+    height: fit-content;
+}
+
+.search-box__btn {
+    border-radius: 30px;
+    height: 25px;
+}
