@@ -158,7 +158,8 @@ body {
     text-decoration: underline;
 }
 
-.input-submit {
+.input-submit,
+.input-submit a {
     display: flex;
     align-items: center;
     justify-content: center;
